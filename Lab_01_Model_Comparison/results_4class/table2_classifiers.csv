@@ -1,8 +1,0 @@
-Feature Extractor,Classifier,Accuracy (%),Precision (%),Recall (%),F1-Score (%),AUC (%)
-EfficientNet-B0 Deep Features,Logistic Regression,59.38,78.31,59.38,52.38,91.76
-EfficientNet-B0 Deep Features,Decision Tree,50.0,52.29,50.0,46.32,67.04
-EfficientNet-B0 Deep Features,Random Forest,62.5,54.39,62.5,54.24,91.29
-EfficientNet-B0 Deep Features,K-Nearest Neighbors (KNN),57.81,75.2,57.81,50.56,86.6
-EfficientNet-B0 Deep Features,Linear SVM,59.38,78.31,59.38,52.38,86.33
-EfficientNet-B0 Deep Features,RBF-SVM,73.44,81.98,73.44,71.96,92.09
-EfficientNet-B0 Deep Features,XGBoost,57.81,52.14,57.81,48.77,90.23
