@@ -83,9 +83,7 @@ Lab_01_Model_Comparison/
 │   ├── table1_transfer_models.csv
 │   ├── table2_classifiers.csv
 │   └── table3_efficiency.csv
-│
-└── results/
-    └── graphs and visual outputs
+
 ```
 
 ## How to Run
