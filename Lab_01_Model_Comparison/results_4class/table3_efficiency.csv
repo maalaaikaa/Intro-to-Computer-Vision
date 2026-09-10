@@ -1,0 +1,5 @@
+Model,Parameters (M),Model Size (MB),FLOPs (G),Inference Time (ms),Accuracy (%)
+AlexNet,57.02,217.52,0.71,2.11,65.62
+ResNet50,23.52,90.01,4.13,7.34,65.62
+DenseNet121,6.96,27.11,2.9,16.34,71.88
+EfficientNet-B0,4.01,15.59,0.41,9.14,78.12

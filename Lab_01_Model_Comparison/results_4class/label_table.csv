@@ -1,0 +1,5 @@
+Label,Class Name,Training Images,Validation Images,Testing Images
+0,melanoma,350,88,16
+1,nevus,286,71,16
+2,basal cell carcinoma,301,75,16
+3,actinic keratosis,91,23,16
