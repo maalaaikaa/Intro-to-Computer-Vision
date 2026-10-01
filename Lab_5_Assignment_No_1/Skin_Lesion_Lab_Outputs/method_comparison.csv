@@ -1,9 +1,0 @@
-Method,Noise Handling,Edge Quality,Boundary Detection,Overall Performance
-Original + Sobel,Weak; texture or strong artifacts dominate,Variable: thick responses or very sparse edges,Misses weak outlines; almost blank for Image 4,Poor overall on these images
-Original + Canny,Weak; substantial background clutter,Thin edges but many unrelated responses,"Lesion texture, hair and skin edges compete",Too cluttered for direct boundary selection
-Average + Sobel,Reduces fine variation; strong hairs remain,Broad gradient bands,Shows lesion regions but thick boundaries,Moderate; limited precision
-Average + Canny,Strong reduction of fine texture,Thin and sparse; faint details also lost,Cleaner maps but several incomplete outlines,Useful cleaner alternative
-Gaussian + Sobel,Reduces texture; retains strong hair,Broad or broken responses,Some margins visible; hairs remain prominent,Moderate
-Gaussian + Canny,Less clutter than unfiltered Canny,Thin; retains more weak detail than averaging,Edge contours usable for Images 2 and 5; others need fallback,Selected balance; not reliable on all images
-Median + Sobel,Fine texture reduced; artifacts remain,Variable; sparse or almost blank in Image 4,Weak margins may disappear after binarization,Inconsistent
-Median + Canny,Less clutter than unfiltered Canny,Thin; internal details and hairs remain,Reasonable outlines in some images; gaps persist,Useful alternative; still needs region processing

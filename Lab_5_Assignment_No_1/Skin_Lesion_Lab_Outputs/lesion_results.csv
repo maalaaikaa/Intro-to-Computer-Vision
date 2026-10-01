@@ -1,6 +1,0 @@
-Image,Filename,Class,Best Filter,Edge Method,Area (pixels),Perimeter (pixels),Boundary source
-Image 1,ISIC_0000139.jpg,melanoma,Gaussian,Canny 20-40,44208,885.91,Otsu fallback + contour
-Image 2,ISIC_0024435.jpg,pigmented benign keratosis,Gaussian,Canny 20-40,15304,1760.15,Canny + closing + contour
-Image 3,ISIC_0024504.jpg,basal cell carcinoma,Gaussian,Canny 20-40,36459,1304.97,Otsu fallback + contour
-Image 4,ISIC_0000019.jpg,nevus,Gaussian,Canny 20-40,48467,977.67,Otsu fallback + contour
-Image 5,ISIC_0000141.jpg,melanoma,Gaussian,Canny 20-40,29172,1127.85,Canny + closing + contour
