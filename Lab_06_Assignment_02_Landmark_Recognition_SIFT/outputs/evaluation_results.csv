@@ -1,0 +1,35 @@
+Test,Ground truth,Condition,Best candidate,Predicted landmark,Keypoints,Reliable matches,RANSAC inliers,Decision,Correct,Time (ms)
+1,Colosseum,Original,Colosseum,Colosseum,3018,634,572,Recognized,✔,1931
+2,Colosseum,Rotated (45°),Colosseum,Colosseum,5511,781,559,Recognized,✔,3840
+3,Colosseum,Resized (50%),Colosseum,Colosseum,737,217,180,Recognized,✔,584
+4,Colosseum,Reduced brightness (x0.4),Colosseum,Colosseum,962,428,377,Recognized,✔,787
+5,Colosseum,Different viewpoint,Colosseum,Colosseum,2802,597,532,Recognized,✔,1652
+6,Colosseum,Combined (rot 30° + 60% + dark),Colosseum,Colosseum,1177,275,192,Recognized,✔,777
+7,Eiffel Tower,Original,Eiffel Tower,Eiffel Tower,1812,158,112,Recognized,✔,1257
+8,Eiffel Tower,Rotated (45°),Eiffel Tower,Eiffel Tower,3453,396,106,Recognized,✔,2534
+9,Eiffel Tower,Resized (50%),Eiffel Tower,Eiffel Tower,349,54,45,Recognized,✔,226
+10,Eiffel Tower,Reduced brightness (x0.4),Eiffel Tower,Eiffel Tower,261,97,68,Recognized,✔,253
+11,Eiffel Tower,Different viewpoint,Eiffel Tower,Eiffel Tower,1456,126,93,Recognized,✔,996
+12,Eiffel Tower,Combined (rot 30° + 60% + dark),Eiffel Tower,Eiffel Tower,362,97,69,Recognized,✔,276
+13,Great Wall of China,Original,Great Wall of China,Great Wall of China,2604,356,324,Recognized,✔,1627
+14,Great Wall of China,Rotated (45°),Great Wall of China,Great Wall of China,4923,444,266,Recognized,✔,3611
+15,Great Wall of China,Resized (50%),Great Wall of China,Great Wall of China,655,188,176,Recognized,✔,506
+16,Great Wall of China,Reduced brightness (x0.4),Great Wall of China,Great Wall of China,243,55,48,Recognized,✔,227
+17,Great Wall of China,Different viewpoint,Great Wall of China,Great Wall of China,2082,277,246,Recognized,✔,1898
+18,Great Wall of China,Combined (rot 30° + 60% + dark),Great Wall of China,Great Wall of China,495,98,72,Recognized,✔,381
+19,Statue of Liberty,Original,Statue of Liberty,Statue of Liberty,1898,391,369,Recognized,✔,1287
+20,Statue of Liberty,Rotated (45°),Statue of Liberty,Statue of Liberty,4069,492,390,Recognized,✔,2980
+21,Statue of Liberty,Resized (50%),Statue of Liberty,Statue of Liberty,426,91,85,Recognized,✔,300
+22,Statue of Liberty,Reduced brightness (x0.4),Statue of Liberty,Statue of Liberty,184,27,22,Recognized,✔,193
+23,Statue of Liberty,Different viewpoint,Statue of Liberty,Statue of Liberty,1424,220,211,Recognized,✔,1157
+24,Statue of Liberty,Combined (rot 30° + 60% + dark),Statue of Liberty,Statue of Liberty,364,47,33,Recognized,✔,252
+25,Taj Mahal,Original,Taj Mahal,Taj Mahal,2887,457,393,Recognized,✔,1856
+26,Taj Mahal,Rotated (45°),Taj Mahal,Taj Mahal,5534,583,381,Recognized,✔,3581
+27,Taj Mahal,Resized (50%),Taj Mahal,Taj Mahal,888,169,135,Recognized,✔,542
+28,Taj Mahal,Reduced brightness (x0.4),Taj Mahal,Taj Mahal,985,234,196,Recognized,✔,777
+29,Taj Mahal,Different viewpoint,Taj Mahal,Taj Mahal,2166,373,310,Recognized,✔,1368
+30,Taj Mahal,Combined (rot 30° + 60% + dark),Taj Mahal,Taj Mahal,1316,228,142,Recognized,✔,761
+31,Not in database,Unknown landmark – original,Eiffel Tower,— (rejected),3608,23,6,Rejected,✔,2128
+32,Not in database,Unknown landmark – rotated (45°),Eiffel Tower,— (rejected),6651,82,7,Rejected,✔,4245
+33,Not in database,Unknown landmark – different viewpoint,Colosseum,— (rejected),3079,14,5,Rejected,✔,2199
+34,Not in database,Unknown – scene without any landmark,Eiffel Tower,— (rejected),1263,15,5,Rejected,✔,888
