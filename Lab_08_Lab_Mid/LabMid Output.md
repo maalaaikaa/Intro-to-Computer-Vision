@@ -119,9 +119,6 @@ Grayscale removes colour information and keeps intensity and shape information. 
 | SVM C candidates | 0.1, 1, 10 |
 | Rotation test | 20° |
 | Noise test | Gaussian noise, σ = 0.05 |
-| Best model by validation score | Not available without execution outputs |
-| Best model on clean test data | Not available without execution outputs |
-| Most robust model under rotation | Not available without execution outputs |
-| Most robust model under noise | Not available without execution outputs |
+
 
 **Data availability note:** The uploaded Jupyter notebook contains the experiment setup and result-producing steps, but its cells have no saved execution outputs. Therefore, the configuration, planned sample counts, hand-calculated feature lengths, and written explanations above are available from the notebook, while measured model scores, selected C values, confusion matrices, keypoint statistics, and robustness outcomes remain unavailable. These measured results have intentionally not been fabricated.
