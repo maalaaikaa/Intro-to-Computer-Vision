@@ -81,65 +81,8 @@
 | Feature scaling | StandardScaler | StandardScaler |
 | Candidate C values | 0.1, 1, 10 | 0.1, 1, 10 |
 
-## 5. SVM Hyperparameter Selection
 
-The notebook selects the value of **C using validation accuracy only**. The test set is reserved for the final evaluation.
-
-| Model | C values tested | Best C | Best validation accuracy | Validation macro-F1 |
-|---|---|---|---|---|
-| HOG + SVM | 0.1, 1, 10 | Not available — notebook has no saved execution output | Not available | Not available |
-| Fixed-grid SIFT + SVM | 0.1, 1, 10 | Not available — notebook has no saved execution output | Not available | Not available |
-
-**Best-performing model:** Cannot be determined from the uploaded notebook alone because its cells have not been executed or their outputs have not been saved. No model score has been estimated or invented.
-
-## 6. Robustness Evaluation
-
-The notebook evaluates the frozen models on the clean test images and on two altered versions of the same test images.
-
-| Test condition | Applied change | Evaluation measure |
-|---|---|---|
-| Clean | No alteration | Test accuracy |
-| Rotated | Rotate each image by 20° around its centre; black fill in corners | Test accuracy |
-| Noisy | Add Gaussian noise with standard deviation 0.05 after scaling pixels to 0–1; clip to valid range | Test accuracy |
-
-### Test accuracy comparison
-
-| Model | Clean test accuracy | Rotated test accuracy | Noisy test accuracy |
-|---|---:|---:|---:|
-| HOG + SVM | Not available | Not available | Not available |
-| Fixed-grid SIFT + SVM | Not available | Not available | Not available |
-
-### Accuracy drop under image changes
-
-Accuracy drop is calculated as **clean accuracy − altered-image accuracy**. A larger drop means the model was affected more by that alteration.
-
-| Model | Rotation accuracy drop | Noise accuracy drop |
-|---|---:|---:|
-| HOG + SVM | Not available | Not available |
-| Fixed-grid SIFT + SVM | Not available | Not available |
-| Model with the larger drop | Cannot be determined without test results | Cannot be determined without test results |
-
-### Predictions recorded before testing
-
-| Condition | Prediction in the notebook | Reason given |
-|---|---|---|
-| Rotation | HOG + SVM would lose more accuracy | HOG uses edge directions in fixed cells; rotation changes edge directions and cell locations. |
-| Noise | HOG + SVM would lose more accuracy | Noise adds small random gradients that may affect HOG histograms; SIFT uses Gaussian-weighted patches. |
-
-**Were the predictions correct?** This cannot be verified until the actual clean, rotated, and noisy test accuracies are available.
-
-## 7. Confusion-Matrix Results
-
-The notebook intends to calculate validation confusion matrices for both models and identify the class pair most frequently confused in either direction.
-
-| Model | Validation accuracy | Validation macro-F1 | Most-confused class pair | Mistakes in both directions combined |
-|---|---:|---:|---|---:|
-| HOG + SVM | Not available | Not available | Not available | Not available |
-| Fixed-grid SIFT + SVM | Not available | Not available | Not available | Not available |
-
-The actual confusion matrices and class-pair counts are not included because no saved cell outputs were present in the uploaded notebook.
-
-## 8. Short Answers
+## 5. Short Answers
 
 ### Why does HOG use block normalisation?
 Block normalisation reduces the effect of lighting and contrast differences. It helps the descriptor represent the pattern of edge directions rather than simply the overall strength of the gradients.
