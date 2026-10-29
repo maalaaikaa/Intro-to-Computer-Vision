@@ -57,7 +57,7 @@
 | Orientation bins per cell | 9 |
 | Values per block | 2 × 2 × 9 = 36 |
 | **HOG feature length per image** | **49 × 36 = 1,764** |
-| Block normalisation | L2-Hys |
+
 
 ## 4. SIFT Feature Calculation
 
